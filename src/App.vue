@@ -18,7 +18,7 @@
             <td class="font-bold">
               <div class="text-red-400" v-if="$filters.price_change(coin.price_change_percentage_24h)">
               {{coin.market_cap_change_percentage_24h}}%</div>
-              <!-- Caso tenha alta valor da moeda, valor focará verde -->
+              <!-- Caso tenha alta valor da moeda, valor ficará verde -->
               <div class="text-green-400" v-else>{{coin.market_cap_change_percentage_24h}}%</div>
             </td>
           </div>
@@ -61,7 +61,7 @@
               <div class="text-red-500" v-if="$filters.price_change(coin.price_change_percentage_24h)">
                 {{coin.market_cap_change_percentage_24h}}%
               </div>
-              <!-- Caso tenha alta valor da moeda, valor focará verde -->
+              <!-- Caso tenha alta valor da moeda, valor ficará verde -->
               <div class="text-green-500" v-else>{{coin.market_cap_change_percentage_24h}}%</div>
             </td>
             <td class="font-bold text-white"> ${{$filters.comma_sep(coin.market_cap)}}</td>

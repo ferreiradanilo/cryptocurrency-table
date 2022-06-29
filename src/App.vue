@@ -14,11 +14,11 @@
           <div>
             <p class="font-bold flex justify-center">
               {{$filters.comma_sep(coin.current_price)}}</p>
-            <!-- Caso tenha queda valor da moeda, valor ficará vermelha -->
+            <!-- Caso tenha queda no valor da moeda, valor ficará vermelha -->
             <td class="font-bold">
               <div class="text-red-400" v-if="$filters.price_change(coin.price_change_percentage_24h)">
               {{coin.market_cap_change_percentage_24h}}%</div>
-              <!-- Caso tenha alta valor da moeda, valor ficará verde -->
+              <!-- Caso tenha alta no valor da moeda, valor ficará verde -->
               <div class="text-green-400" v-else>{{coin.market_cap_change_percentage_24h}}%</div>
             </td>
           </div>
@@ -57,11 +57,11 @@
             </td>
             <td class="font-bold text-white">${{$filters.comma_sep(coin.current_price)}}</td>
             <td class="font-bold text-white">
-              <!-- Caso tenha queda valor da moeda, valor ficará vermelha -->
+              <!-- Caso tenha queda no valor da moeda, valor ficará vermelha -->
               <div class="text-red-500" v-if="$filters.price_change(coin.price_change_percentage_24h)">
                 {{coin.market_cap_change_percentage_24h}}%
               </div>
-              <!-- Caso tenha alta valor da moeda, valor ficará verde -->
+              <!-- Caso tenha alta no valor da moeda, valor ficará verde -->
               <div class="text-green-500" v-else>{{coin.market_cap_change_percentage_24h}}%</div>
             </td>
             <td class="font-bold text-white"> ${{$filters.comma_sep(coin.market_cap)}}</td>
